@@ -1,0 +1,34 @@
+<!docktype html>
+<html>
+
+<head>
+    <title>
+       Tiny url Home
+    </title>
+    <style type=text/css>
+        #t  {color:darkgoldenrod}
+        #c {
+            font-family:arial;
+            color:blue
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id='t'>
+        URL Shortening Service!
+    </p>
+	{% if user.is_authenticated %}
+		<p>Hi {{ user.username }}, Welcome!</p>
+	{% else %}
+        <p>You are not logged in!</p>
+    {% endif %}
+
+    <h id='c'>
+        {% block content %}
+        {% endblock %}
+    </h>
+
+</body>
+</html>

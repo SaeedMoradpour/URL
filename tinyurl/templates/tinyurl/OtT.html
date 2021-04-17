@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>You may either suggest a shorten phrase for the url or leave it blank so we suggest:</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Fetch</button>
+</form>
+{% endblock %}

@@ -1,0 +1,13 @@
+<!docktype html>
+<html>
+<head>
+    <title>
+        Tinurl
+    </title>
+</head>
+<body>
+ <p>
+  {{originalurl}} ==> {{tinyurl}}
+</p>     
+</body>
+</html>
